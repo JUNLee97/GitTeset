@@ -1,17 +1,9 @@
 package kh.spring.controller;
 
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.Locale;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import kh.spring.dao.MessageDAO;
 import kh.spring.dto.MessageDTO;
@@ -25,15 +17,18 @@ public class HomeController {
 	@RequestMapping("/") //
 	public String home() {
 		
-		return "homea";
+		return "home";
 	}
 
 	// 입력기능
-//	@RequestMapping("")
-//	public String insertMessage(MessageDTO dto) {
-//
-//		return;
-//	}
+	@RequestMapping("insertMessage")
+	public String insertMessage(MessageDTO dto, Model model) {
+		
+		int result = dao.insert(dto);
+		
+		model.addAttribute("result",result);
+		return "home";
+	}
 
 	// 입력기능
 //	@RequestMapping("")
