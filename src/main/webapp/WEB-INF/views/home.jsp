@@ -20,7 +20,7 @@
 					id="message" name="message">
 			</tr>
 			<tr>
-				<td><button id="insert">메세지 입력</button></td>
+				<td><button id="insert">메세지 입려크</button></td>
 				<td><button type="button" id="list">메세지 목록 출력</button></td>
 			</tr>
 		</table>
