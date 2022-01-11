@@ -11,25 +11,20 @@
 <body>
 	<form action="insertMessage">
 		<table border=1 style="margin: auto;">
-
 			<tr>
 				<td colspan=2><input type=text placeholder="input your name"
 					id="name" name="name">
 			</tr>
-
 			<tr>
 				<td colspan=2><input type=text placeholder="input message"
 					id="message" name="message">
 			</tr>
-
 			<tr>
 				<td><button id="insert">메세지 입력</button></td>
 				<td><button type="button" id="list">메세지 목록 출력</button></td>
 			</tr>
-
 		</table>
 	</form>
-
 
 	<c:if test="${result eq '1' }">
 		<script>
@@ -37,6 +32,15 @@
 			location.href = "redirect:/";
 		</script>
 	</c:if>
+	
+	<script>
+	  $("#list").on("click",function() {
+		  alert("성공적으로 리스트를 클릭했습니다.")
+		  location.href ="list";
+	  })
+	
+	
+	</script>
 
 
 
