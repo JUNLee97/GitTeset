@@ -21,7 +21,7 @@
 			</tr>
 			<tr>
 				<td><button id="insert">메세지 입려크</button></td>
-				<td><button type="button" id="list">메세지 목록 출력</button></td>
+				<td><button type="button" id="list">메세지 목록 출력력력력력</button></td>
 			</tr>
 		</table>
 	</form>
