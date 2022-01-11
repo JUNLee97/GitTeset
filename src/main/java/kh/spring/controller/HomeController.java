@@ -24,8 +24,8 @@ public class HomeController {
 
 	@RequestMapping("/") //
 	public String home() {
-
-		return "home";
+		
+		return "homea";
 	}
 
 	// 입력기능
