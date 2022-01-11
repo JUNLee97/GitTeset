@@ -18,11 +18,11 @@ public class MessageDAO {
 	
 	
 	// 입력 기능
-//	public int insert(MessageDTO dto) {
-//		
-//		return ; 
-//		
-//	}
+	public int insert(MessageDTO dto) {
+	
+		return mybatis.insert("Message.insert",dto); 
+		
+	}
 	
 	
 		

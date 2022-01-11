@@ -7,6 +7,9 @@
   
   <mapper namespace="Message">
   	
+  	<insert id="insert">
+  		insert into message values(message_seq.nextval, #{name}, #{message})
+  	</insert>
   	
   
   </mapper>
