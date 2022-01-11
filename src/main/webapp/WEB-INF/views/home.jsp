@@ -34,7 +34,7 @@
 	<c:if test="${result eq '1' }">
 		<script>
 			alert("성공적으로 작성되었습니다.");
-			location.href = "/";
+			location.href = "redirect:/";
 		</script>
 	</c:if>
 

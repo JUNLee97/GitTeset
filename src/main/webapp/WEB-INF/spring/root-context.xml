@@ -15,9 +15,7 @@
 			value="jdbc:oracle:thin:@3.38.211.61:1521:xe"></property>
 		<property name="initialSize" value="30"></property>
 	</bean>
-<<<<<<< HEAD
 
-=======
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
@@ -31,5 +29,4 @@
 	
 	
 		
->>>>>>> f9185c37c72036912c419433e1497f2b32835cd7
 </beans>

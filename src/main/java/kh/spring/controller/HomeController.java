@@ -14,21 +14,20 @@ public class HomeController {
 	@Autowired
 	public MessageDAO dao;
 
-	@RequestMapping("/") //
+	@RequestMapping("/") 
 	public String home() {
-		
 		return "home";
 	}
 
 	// 입력기능
 	@RequestMapping("insertMessage")
 	public String insertMessage(MessageDTO dto, Model model) {
-		
 		int result = dao.insert(dto);
 		
 		model.addAttribute("result",result);
 		return "home";
 	}
+   
 
 	// 입력기능
 //	@RequestMapping("")
