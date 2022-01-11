@@ -27,11 +27,9 @@ public class MessageDAO {
 	
 		
 	// 출력 기능
-//	public List<MessageDTO> messageList() {
-//		
-//		return ;
-//		
-//	}
+	public List<MessageDTO> messageList() {
+		return mybatis.selectList("Message.selectAll");
+	}
 	
 	
 	

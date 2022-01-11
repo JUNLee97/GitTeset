@@ -11,5 +11,7 @@
   		insert into message values(message_seq.nextval, #{name}, #{message})
   	</insert>
   	
-  
+  	<select id="selectAll" resultType="kh.spring.dto.MessageDTO">
+  		select * from message order by seq desc
+  	</select>
   </mapper>
