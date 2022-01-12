@@ -26,7 +26,7 @@
 		</table>
 	</form>
 
-dasdasasdasdasdas
+	억까 탈출
 
 
 	<c:if test="${result eq '1' }">
