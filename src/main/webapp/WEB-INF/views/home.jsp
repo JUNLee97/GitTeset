@@ -26,6 +26,9 @@
 		</table>
 	</form>
 
+dasdasasdasdasdas
+
+
 	<c:if test="${result eq '1' }">
 		<script>
 			alert("성공적으로 작성되었습니다.");
