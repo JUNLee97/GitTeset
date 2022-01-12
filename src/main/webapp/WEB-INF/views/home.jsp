@@ -26,7 +26,7 @@
 		</table>
 	</form>
 
-	억까 탈출
+	억까 탈출 수정
 
 
 	<c:if test="${result eq '1' }">
